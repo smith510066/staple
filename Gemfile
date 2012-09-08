@@ -39,3 +39,10 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 #gem "bootstrap-sass", "~> 2.1.0.0"
+
+
+
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
