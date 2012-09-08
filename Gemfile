@@ -40,7 +40,7 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 #gem "bootstrap-sass", "~> 2.1.0.0"
 
-
+gem "bootstrap-sass", "~> 2.1.0.0"
 
 group :production do
   # gems specifically for Heroku go here
