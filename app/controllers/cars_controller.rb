@@ -1,4 +1,11 @@
 class CarsController < ApplicationController
+before_filter :authenticate
+
+
+
+
+
+
   # GET /cars
   # GET /cars.json
   def index
@@ -80,4 +87,15 @@ class CarsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  before_filter :authenticate
+
+protected
+
+def authenticate
+  authenticate_or_request_with_http_basic do |username, password|
+    username == "staple" && password == "staple"
+  end
+end
+
 end
